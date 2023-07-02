@@ -77,18 +77,6 @@ internal class RegisterViewModel
         return false;
     }
 
-    private bool ContieneSimbolo(string password)
-    {
-        foreach (char caracter in password)
-        {
-            if (!char.IsLetterOrDigit(caracter))
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
     private bool IsUpper(char c)
     {
         int codigoAscii = Convert.ToInt32(c);
